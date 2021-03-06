@@ -1,3 +1,5 @@
+
+import { CustomersRoutingModule } from './customers-routing.module';
 import { FormsModule } from '@angular/forms';
 import { SharedModule } from './../shared/shared.module';
 import { FilterTextboxComponent } from './customers-list/filter.textbox.component';
@@ -13,9 +15,10 @@ import { CustomersListComponent } from './customers-list/customers-list.componen
     CustomersComponent,
     CustomersListComponent,
     FilterTextboxComponent
+   
   ],
   imports: [
-    CommonModule, SharedModule, FormsModule
+    CommonModule, SharedModule, FormsModule,  CustomersRoutingModule
   ],
   exports: [ CustomersComponent]
 })
